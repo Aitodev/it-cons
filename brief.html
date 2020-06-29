@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Analitics Design Development</title>
+    <meta name="description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="315"/>
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96"/>
+    <meta name="theme-color" content=""/>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-touch-icon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-touch-icon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-touch-icon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-touch-icon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-touch-icon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-touch-icon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-touch-icon/apple-touch-icon-152x152.png"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="date=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="preload" href="./css/style.css" as="style"/>
+    <link rel="preload" href="./css/brief.css" as="style"/>
+  </head>
+  <body style="opacity: 0">
+    <header class="header" id="header">
+      <div class="wrap">
+        <div class="header__row"><a class="header__logo" href="/"><img src="./images/svg/logo-white.svg" alt="logo"/></a>
+          <nav class="header__navigation">
+            <div class="header__navigation-btn" id="header-menu"><span></span><span></span></div>
+            <ul class="header__navigation-container">
+              <li class="header__navigation-item"><a class="header__navigation-link" href="analytics.html">analytics</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link" href="design.html">design</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link" href="web.html">web</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link" href="mobile.html">mobile</a></li>
+              <li class="header__navigation-item btn"><a class="header__navigation-link" href="brief.html">Заказать звонок</a></li>
+            </ul>
+          </nav>
+          <div class="header__call"><a class="header__call-btn btn-hover" href="brief.html?direction=Страница-header">Заказать звонок</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="brief">
+        <div class="wrap">
+          <h1 class="brief__title">Оставьте заявку</h1>
+          <form class="brief__form" action="/post.php" method="post" id="brief-form">
+            <div class="brief__form-row">
+              <div class="brief__form-left-content">
+                <div class="brief__form-body">
+                  <div class="brief__form-body-row">
+                    <label class="brief__form-input" for="input-name">
+                      <input id="input-name" type="text" name="name" placeholder=" " required="required" value=""/><span class="label">Имя*</span><span class="focus-bg"></span>
+                    </label>
+                    <label class="brief__form-input" for="input-tel">
+                      <input id="input-tel" type="tel" name="tel" placeholder=" " required="required" value=""/><span class="label">Номер телефона*</span><span class="focus-bg"></span>
+                    </label>
+                  </div>
+                  <div class="brief__form-body-row">
+                    <label class="brief__form-input" for="input-activity">
+                      <input id="input-activity" type="text" name="activity" placeholder=" " required="required"/><span class="label">Сфера деятельности</span><span class="focus-bg"></span>
+                    </label>
+                    <label class="brief__form-input" for="input-link">
+                      <input id="input-link" type="text" name="link" placeholder=" " required="required"/><span class="label">Ссылка на сайт</span><span class="focus-bg"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="brief__form__answer">
+                  <p class="brief__form__answer-loading">Идет Отправка</p>
+                  <p class="brief__form__answer-success">Успешно Отправлено</p>
+                  <p class="brief__form__answer-error">Произошла Ошибка</p>
+                </div>
+              </div>
+              <div class="brief__form-icon">
+                <svg viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <g id="_25" data-name="25">
+                    <path d="M58.93,5.31a.65.65,0,0,0,0-.2A.76.76,0,0,0,59,5a1.85,1.85,0,0,0,0-.23s0-.06,0-.09,0,0,0,0a1.37,1.37,0,0,0-.13-.2.48.48,0,0,0-.09-.11s0,0,0,0a1,1,0,0,0-.17-.11l-.11-.07A1,1,0,0,0,58.06,4h0a1.19,1.19,0,0,0-.37.06s0,0,0,0l-13,5a1,1,0,0,0-.35,1.64l2,2A1,1,0,0,0,47,13v4a1,1,0,0,0,.62.92A.84.84,0,0,0,48,18a1,1,0,0,0,.71-.29L50,16.41l.29.3A1,1,0,0,0,51,17h.11a1,1,0,0,0,.73-.45l7-11a.26.26,0,0,0,0-.08A.39.39,0,0,0,58.93,5.31ZM46.79,10.38l5.55-2.13L48,11.76a1,1,0,0,0-.24-.47Zm4,4-.12-.12L49.5,13.08l4.43-3.54Z"></path>
+                    <path d="M42.54,16c-1,0-4.26-.46-8-.69a.64.64,0,0,0-.22-.32c-6.73-5.22-19.09-.77-24.94,3.71-1,.77,0,2.51,1,1.73a25.54,25.54,0,0,1,10.74-5,23.8,23.8,0,0,1,6.84-.25c-5,.23-9.17,1.34-8.47,4.64,1.07,5.07,11.11.5,14.21-2.64,2.95.22,5.91.66,8.87.79C43.82,18.07,43.82,16.07,42.54,16ZM29.19,18.15c-.9.62-5.12,2.27-6.46,1.68-2.64-1.17,6.72-2.7,7.59-2.71a.85.85,0,0,1,.16,0A7.75,7.75,0,0,1,29.19,18.15Z"></path>
+                    <path d="M61,31.76l-2-8A1,1,0,0,0,58,23H6a1,1,0,0,0-1,.76l-2,8a1,1,0,0,0,.18.86A1,1,0,0,0,4,33H7V56a1,1,0,0,0,1,1H56a1,1,0,0,0,1-1V33h3a1,1,0,0,0,.79-.38A1,1,0,0,0,61,31.76ZM6.78,25H44.72l-1.5,6H5.28ZM9,33H24V55H9ZM26,55V33h4v4a1,1,0,0,0,2,0V33H44a1,1,0,0,0,1-.76L46.78,25H47V55H32V45a1,1,0,0,0-2,0V55Zm29,0H49V25h.22L51,32.24A1,1,0,0,0,52,33h3ZM52.78,31l-1.5-6h5.94l1.5,6Z"></path>
+                    <path d="M31,43a1,1,0,0,0,1-1V40a1,1,0,0,0-2,0v2A1,1,0,0,0,31,43Z"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <input type="hidden" name="direction"/>
+            <button class="brief__form-btn btn-primary" type="submit" id="brief-form-submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="wrap">
+        <div class="footer__row">
+          <div class="footer__item"><img class="footer__item-logo" src="./images/svg/logo-white.svg" alt="logo-white"/></div>
+          <div class="footer__item">
+            <h3 class="footer__item-title">ADD GROUP</h3><a class="footer__item-link" href="#">О нас</a><a class="footer__item-link" href="#">Сроки и оплата</a><a class="footer__item-link" href="#">Контакты</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__item-title">ПОМОЩЬ</h3><a class="footer__item-link" href="#">Оферта</a><a class="footer__item-link" href="#">Политика обработки персональных данных</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__item-title">КОНТАКТЫ</h3><a class="footer__item-link" href="tel:+74954813365">+7 (495) 481-33-65</a><a class="footer__item-link call" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="./css/brief.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/jquery.maskedinput.min.js"></script>
+    <script src="./libs/modernizr-custom.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
